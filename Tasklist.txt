@@ -1,0 +1,59 @@
+Task list
+	OWNER
+		Login page
+		Property page
+			Form
+				Type 
+					plot
+					house
+						new 
+						old
+							rent 
+							buy
+							lease
+				Area (Location) - List multiselect
+				Price range - slider
+				Sq ft - slider
+				Facing direction - list multi select
+			propert details
+				complete priopert list
+					filterable based on
+						area
+						date range
+						sold/unsold
+						type (plot /house)
+		buyers details
+			name
+			contact details
+			property id 
+
+	BUYER
+		Plot
+			Area (Location) - List multiselect
+			Price range - slider
+			Sq ft - slider
+			Type (farm land/ nanjai punjai)
+		House
+			Used
+				Filter
+					Type
+						rent
+						lease 
+					Area (Location) - List multiselect
+					Price range - slider
+					Sq ft - slider
+					Facing direction - list multi select
+				List details
+					seller name
+					contact number
+					photos
+			new
+				Filter
+					Area (Location) - List multiselect
+					Price range - slider
+					Sq ft - slider
+					Facing direction - list multi select
+				List details
+					seller name
+					contact number
+					photos

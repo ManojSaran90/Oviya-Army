@@ -1,0 +1,177 @@
+/*Common CSS*/
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-weight: 900;
+}
+
+/*Gallery*/
+.gallery{
+  background-color: #f7f7f7;
+  padding-top: 10px;
+}
+.gallery a {
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.gallery a img{
+    margin: auto;
+}
+.gallery-block {
+    margin-bottom: 20px;
+}
+.gallery-block span{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    margin-top: 5px;
+    border: 1px solid transparent;
+    transition: all 0.5s ease;
+}
+
+
+.media-name:hover, .media-name:focus{
+    background-color:#FFFFF0;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid blue;
+    box-sizing:border-box;
+
+}
+
+/*Gallery Loader*/
+#gallery-block-loader{
+    display: none;
+}
+
+
+.gallery-block-inner{
+    min-height: 165px;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.photobox_a{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.media-video img{
+    opacity: 0;
+}
+
+
+
+#progressbar {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    padding: 1px;
+}
+#progressbar .bar {
+    background-color:#FF6C67;
+    width:0%;
+}
+#progressbar .percent {
+    display:inline-block;
+    text-align: center;
+}
+
+/*Other*/
+#gallery-empty{
+    padding: 10px;
+    font-size: 20px;
+}
+.button{
+	outline: none;
+    display: inline-block;
+    background-color: #FF6C67;
+    color: #FFF;
+    text-align: center;
+    text-transform: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    height: 58px;
+    line-height: 58px;
+    font-size: 21px;
+    padding: 0 30px;
+    min-width: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 1px 2px rgba(64, 64, 64, 0.1);
+    border: 1px solid #d2d2d2;
+    transition: all 0.5s ease;
+    border-radius: 2px;
+}
+.button:hover, .button:focus{
+	text-decoration: none;
+    color: #FFF;
+    background: #E9615F;
+}
+
+
+
+.button-blue{
+    background-color: #0098D3;
+}
+.button-blue:hover, .button-blue:focus{
+    background-color: #337AB7;
+}
+
+.text-field {
+    border: 1px solid #AAA;
+    padding: 0 15px;
+    margin: 0 0 18px 0;
+    background: #FFF;
+    position: relative;
+    border-width: 1px 1px 2px 1px;
+    border-color: #C9C9C9;
+    min-height: 60px;
+    display: block;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    width: 100%;
+}
+
+@media (max-width: 1200px) { 
+    .gallery-block-inner{
+        min-height: 210px;
+    }
+}
+
+@media (max-width: 991px) { 
+    .gallery-block-inner{
+        min-height: 143px;
+    }
+}
+
+@media (max-width: 480px) {
+    .button{
+        width: 100%;
+    }
+    .gallery-block-inner{
+        min-height: 100px;
+    }
+}
+
